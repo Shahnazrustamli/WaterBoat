@@ -1,0 +1,27 @@
+:root{
+    --blue: #1089ff
+}
+header {
+  background-color: #fff;
+}
+.desktop{
+    display: none;
+}
+.item i{
+    width: 40px;
+    height: 40px;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and(min-width:768px) {
+  .desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
