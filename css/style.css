@@ -1,27 +1,303 @@
-:root{
-    --blue: #1089ff
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+:root {
+  --blue: #1089ff;
+}
+body{
+  /* overflow-x: hidden */
 }
 header {
   background-color: #fff;
 }
-.desktop{
-    display: none;
+.desktop,
+#nav {
+  display: none;
+  position: sticky;
 }
-.item i{
-    width: 40px;
-    height: 40px;
-    background-color: var(--blue);
-    color: white;
-    border-radius: 50%;
-    display: flex;
+.contacts .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts .item i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.contacts .item h4 {
+  font: 400 1.2em "Oswald", sans-serif;
+  color: #000;
+}
+.contacts .item p {
+  font: 400 1em "Muli";
+  color: #808080;
+  margin: 0;
+}
+#slider {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../image/hero_1.jpg") center center/cover no-repeat;
+  min-height: 700px;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 60px;
+}
+#slider h1 {
+  font: 300 1.5em "Oswald", sans-serif;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+#slider p {
+  font: 300 1.1em "Muli";
+  color: #fff;
+  margin-bottom: 16px;
+}
+#slider .btn,
+#about .btn {
+  text-transform: uppercase;
+  font-size: 300 0.8em "Oswald", sans-serif;
+  letter-spacing: 0rem;
+  padding: 16px 24px;
+}
+#about .about_us,
+.sec-4 .destination p,
+.form-head p {
+  display: block;
+  font: 300 1.1em "Dancing Script", sans-serif;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+#about {
+  padding: 5em 0;
+}
+#about h3 {
+  font: 400 1.7em "Oswald", sans-serif;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+}
+#about p {
+  font: 1.1em "Muli";
+  margin: 0 0 16px;
+  color: #808080;
+}
+.sec-2 {
+  padding: 48px 0;
+}
+.sec-2 .icon {
+  margin-bottom: 29px;
+}
+.sec-2 h3 {
+  font: 400 1.3em "Oswald", sans-serif;
+  margin-bottom: 8px;
+  color: #000;
+}
+.sec-2 p {
+  font: 300 1.2em "Muli", sans-serif;
+  color: #808080;
+  margin-bottom: 1em;
+}
+.sec-3,
+.sec-8 {
+  background: linear-gradient(rgba(16, 136, 255, 0.7), rgba(16, 136, 255, 0.7)),
+    url("../image/hero_1.jpg") center center/cover no-repeat fixed;
+  color: white;
+  text-align: center;
+  padding: 70px 50px;
+}
+.sec-8 {
+  background: linear-gradient(rgba(16, 136, 255, 0.7), rgba(16, 136, 255, 0.7)),
+    url("../image/hero_2.jpg") center center/cover no-repeat fixed;
+  padding: 100px 0;
+}
+.number h3 {
+  font: 2em "Oswald", sans-serif;
+}
+.number span {
+  font: 1.1em "Muli";
+}
+.sec-8 h3 {
+  font: 400 2em "Oswald", sans-serif;
+  margin-bottom: 8px;
+}
+.sec-8 p {
+  font: 300 1.2em "Muli";
+  margin-bottom: 1em;
+}
+.sec-8 a {
+  font: 400 1em "Oswald", sans-serif;
+  text-transform: uppercase;
+  background-color: #ffa139;
+  border-color: #ffa139;
+  letter-spacing: 1.2px;
+}
+.sec-4{
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+.sec-4 .card{
+  margin: 10px 0;
+}
+.sec-4 .destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 30px 0;
+}
+.sec-4 .destination h3, .form-head h3{
+  font: 400 1.8em "Oswald", sans-serif;
+}
+.sec-4 .destination hr, .form-head hr{
+  width: 50px;
+  /* height: 2px;
+  color: darkblue; */
+  border: 2px solid darkblue;
+  margin-bottom: 60px;
+}
+.sec-4 .card .card-title {
+  display: flex;
+  align-items: center;
+}
+.card-title {
+  display: flex;
+  align-items: center;
+}
+.card-title i {
+  color: var(--blue);
+}
+.card-title h3 {
+  font: 400 1.1em "Oswald", sans-serif;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+.card-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-b i {
+  color: #808080;
+}
+.card-b span {
+  color: #808080;
+  font: 300 1.1em "Muli";
+}
+.card-b button {
+  padding: 5px 10px;
+  border: transparent;
+  color: white;
+  font: 300 1.1em "Muli";
+  border-radius: 4px;
+}
+.sec-5{
+  padding: 88px;
+}
+.sec-5 img{
+  width: 100%;
+}
+.sec-5 .column1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+footer {
+  text-align: left;
+  /* background: #888; */
+  padding: 64px 0;
+}
+.footer_col ul {
+  padding: 0;
+}
+.footer_col li,
+.learn,
+.copyright a {
+  font: 300 1em "Muli";
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+.footer_col h3 {
+  font: 400 1em "Oswald";
+  color: #000;
+  border-bottom: 1.6px solid var(--blue);
+  margin-bottom: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+footer .text {
+  font: 300 1em "Muli";
+  color: #808080;
+}
+.copyright {
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 112px 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop {
     align-items: center;
-    justify-content: center;
-}
-@media only screen and(min-width:768px) {
-  .desktop{
+    justify-content: space-between;
+  }
+  .header_top {
+    padding: 40px;
+  }
+  .contacts {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+  }
+  .contacts .item {
+    display: flex;
+    margin-left: 20px;
+  }
+  #nav {
+    display: block;
+    background: var(--blue);
+    padding: 10px 0;
+  }
+  #nav menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav menu li a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px;
+    padding-bottom: 5px;
+    font: bold 1em "Oswald";
+  }
+  #nav menu li .active,
+  #nav menu li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  #slider h1 {
+    font: 300 3em "Oswald", sans-serif;
+  }
+  .number h3 {
+    font-size: 3.1em;
+  }
+  .footer_col li a:hover,
+  .learn a:hover,
+  .copyright a:hover {
+    border-bottom: 1px solid #1089ff;
+  }
+  .sec-8 a:hover {
+    background-color: #ff8f5c;
   }
 }
