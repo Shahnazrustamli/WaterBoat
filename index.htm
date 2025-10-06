@@ -236,7 +236,7 @@
             <div class="col-12 destination">
               <p><span class="text-primary">Destination</span></p>
               <h3>Our Destinations</h3>
-              <hr />
+              <hr class="border-primary"/>
             </div>
           </div>
           <div class="row">
@@ -348,21 +348,231 @@
             <div class="col-lg-5 col-md-6 form-head">
               <p><span class="text-primary">Book Now</span></p>
               <h3>Book A Yacht</h3>
-              <hr />
+              <hr class="border-primary"/>
               <form>
                 <div class="column1">
-                  <div class="form-group">
-                    <label for="name">Full Name:</label> <br>
-                    <input type="text" id="name">
+                  <div class="input">
+                    <label for="name">Full Name:</label> <br />
+                    <input class="rounded-1" type="text" id="name" />
                   </div>
                   <div class="form-group">
-                    <label for="name">Number of People:</label> <br>
-                    <input type="text" id="name">
+                    <label for="num">Number of People:</label> <br />
+                    <input class="rounded-1" type="number" id="num" />
+                  </div>
+                  <div class="form-group">
+                    <label for="date">Date From:</label> <br />
+                    <input class="rounded-1" type="number" id="date" />
+                  </div>
+                  <div class="form-group">
+                    <label for="date2">Date to:</label> <br />
+                    <input class="rounded-1" type="number" id="date2" />
+                  </div>
+                  <div class="form-group">
+                    <label for="select">Yacht You're Interested in:</label>
+                    <select
+                      id="select"
+                      class="form-select rounded-1 w-100 select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Motor Yacht</option>
+                      <option value="1">He-Speed Yacht</option>
+                      <option value="2">Premium Yacht</option>
+                      <option value="3">Presidential Yacht</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label> <br />
+                    <input class="rounded-1" type="email" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label> <br />
+                    <input class="rounded-1" type="tel" id="phone" />
+                  </div>
+                  <div class="form-group">
+                    <label for="note">Notes</label> <br />
+                    <textarea
+                      name="note"
+                      id="note"
+                      class="rounded-1"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      class="btn btn-primary py-3 px-5 button"
+                      value="Book Now"
+                    />
                   </div>
                 </div>
               </form>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="sec-6">
+        <div class="container">
+          <p class="text-center">
+            <span class="text-primary">Team</span>
+          </p>
+          <h3 class="text-center">Our Team</h3>
+          <hr class="text-center mx-auto border-primary" />
+          <div class="row py-5">
+            <div class="col-lg-3 col-md-6 text-center person_card">
+              <div class="person position-relative">
+                <div class="icons">
+                  <img
+                    src="image/person_1.jpg"
+                    alt="person"
+                    class="img-fluid"
+                  />
+                  <div class="social position-absolute">
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-facebook-f p"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="name">
+                  <h3>Craig Daniel</h3>
+                  <span class="position text-primary">Engineer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center person_card">
+              <div class="person position-relative">
+                <div class="icons">
+                  <img
+                    src="image/person_2.jpg"
+                    alt="person"
+                    class="img-fluid"
+                  />
+                  <div class="social position-absolute">
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-facebook-f p"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="name">
+                  <h3>Craig Daniel</h3>
+                  <span class="position text-primary">Engineer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center person_card">
+              <div class="person position-relative">
+                <div class="icons">
+                  <img
+                    src="image/person_3.jpg"
+                    alt="person"
+                    class="img-fluid"
+                  />
+                  <div class="social position-absolute">
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-facebook-f p"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="name">
+                  <h3>Craig Daniel</h3>
+                  <span class="position text-primary">Engineer</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center person_card">
+              <div class="person position-relative">
+                <div class="icons">
+                  <img
+                    src="image/person_4.jpg"
+                    alt="person"
+                    class="img-fluid"
+                  />
+                  <div class="social position-absolute">
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-facebook-f p"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a href="#" class="icon"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="name">
+                  <h3>Craig Daniel</h3>
+                  <span class="position text-primary">Engineer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-7">
+        <div class="container">
+          <p class="text-center">
+            <span class="text-primary">Testimonial</span>
+          </p>
+          <h3 class="text-center">What Customer Saying...</h3>
+          <hr class="text-center mx-auto border-primary" />
+          <div class="row py-5">
+            <div class="col-lg-4 col-md-6">
+              <div class="card text position-relative">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem laborum cumque commodi, unde doloribus.</p>
+                <i class="fa-solid fa-quote-right position-absolute"></i>
+              </div>
+              <div class="profile">
+                <img src="image/person_3_sq.jpg" alt="profile picture">
+                <div>
+                  <h3>John Doe</h3>
+                  <p>CEO and Co-Founder</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card text position-relative">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem laborum cumque commodi, unde doloribus.</p>
+                <i class="fa-solid fa-quote-right position-absolute"></i>
+              </div>
+              <div class="profile">
+                <img src="image/person_4_sq.jpg" alt="profile picture">
+                <div>
+                  <h3>John Doe</h3>
+                  <p>CEO and Co-Founder</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card text position-relative">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem laborum cumque commodi, unde doloribus.</p>
+                <i class="fa-solid fa-quote-right position-absolute"></i>
+              </div>
+              <div class="profile">
+                <img src="image/person_3_sq.jpg" alt="profile picture">
+                <div>
+                  <h3>John Doe</h3>
+                  <p>CEO and Co-Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
       <div class="sec-8">

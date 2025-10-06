@@ -3,7 +3,7 @@
 :root {
   --blue: #1089ff;
 }
-body{
+body {
   /* overflow-x: hidden */
 }
 header {
@@ -69,7 +69,8 @@ header {
 }
 #about .about_us,
 .sec-4 .destination p,
-.form-head p {
+.form-head p,
+.sec-6 p {
   display: block;
   font: 300 1.1em "Dancing Script", sans-serif;
   text-transform: capitalize;
@@ -138,11 +139,11 @@ header {
   border-color: #ffa139;
   letter-spacing: 1.2px;
 }
-.sec-4{
+.sec-4 {
   padding: 80px 0;
   background: #f8f9fa;
 }
-.sec-4 .card{
+.sec-4 .card {
   margin: 10px 0;
 }
 .sec-4 .destination {
@@ -152,15 +153,20 @@ header {
   justify-content: center;
   padding: 0 0 30px 0;
 }
-.sec-4 .destination h3, .form-head h3{
+.sec-4 .destination h3,
+.form-head h3,
+.sec-6 h3 {
   font: 400 1.8em "Oswald", sans-serif;
 }
-.sec-4 .destination hr, .form-head hr{
+.sec-4 .destination hr,
+.form-head hr,
+.sec-6 hr,
+.sec-7 hr {
   width: 50px;
   /* height: 2px;
   color: darkblue; */
   border: 2px solid darkblue;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .sec-4 .card .card-title {
   display: flex;
@@ -197,23 +203,111 @@ header {
   font: 300 1.1em "Muli";
   border-radius: 4px;
 }
-.sec-5{
+.sec-5 {
   padding: 88px;
 }
-.sec-5 img{
+.sec-5 img {
   width: 100%;
 }
-.sec-5 .column1{
+.sec-5 .column1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sec-5 input {
+  width: 15em;
+  /* margin-right: 20px; */
+  padding: 6px 12px;
+  margin: 0 0 1em 0;
+  color: #495057;
+  border: 1px solid #ced4da;
+}
+.sec-5 label,
+textarea {
+  font: 300 1.1em "Muli";
+  margin-bottom: 0.5rem;
+  color: #808080;
+}
+.sec-5 .select {
+  /* width: 33em !important; */
+  margin-bottom: 0.5rem;
+  color: #495057;
+  padding: 6px 12px;
+  margin: 0 0 1em 0;
+}
+form .button {
+  color: #fff;
+  text-transform: uppercase;
+  font: 300 0.9em "Oswald", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
-
-
-
-
-
+.sec-6 {
+  padding: 88px 0;
+}
+.sec-6 .social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  bottom: 130px;
+  left: 10px;
+}
+.sec-6 .social .icon {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #1089ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-6 .name h3 {
+  font: 400 1.8em "Oswald", sans-serif;
+  margin: 1em 0 0.5em 0;
+}
+.sec-6 span {
+  display: inline-block;
+  font: 300 1.1em "Muli";
+  margin-bottom: 10px;
+}
+.sec-7 .profile h3{
+  margin: 15px 0 4px 0;
+  font: bold 1em "Muli";
+  color: #000;
+}
+.sec-7 .profile p{
+  font: 400 15px "Muli";
+  font-family: 'Muli';
+  color: #808080;
+}
+.sec-7 .profile{
+  display: flex;
+  align-items: center ;
+}
+.sec-7 .profile img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.sec-7 .text{
+  text-align: left;
+  padding: 30px;
+  margin-bottom: 1em;
+}
+.sec-7 i{
+  font-size: 1.5em;
+  color: #1089ff;
+  right: 15px;
+  bottom: 30px;
+}
+.sec-7 .text p{
+  font: 300 1.1em 'Muli-italic';
+  padding: 0 20px 0 0;
+  color: gray !important;
+  line-height: 1.7;
+}
 footer {
   text-align: left;
   /* background: #888; */
@@ -299,5 +393,19 @@ footer .text {
   }
   .sec-8 a:hover {
     background-color: #ff8f5c;
+  }
+  .sec-5 input:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .sec-6 .icons {
+    overflow: hidden !important;
+  }
+  .sec-6 img {
+    transition: 0.3s all ease;
+  }
+  .sec-6 .person_card:hover img {
+    transform: scale(1.05);
   }
 }

@@ -2,3 +2,7 @@
     font-family: 'Muli';
     src: url("../font/Muli/Muli-Light.ttf");
 }
+@font-face {
+    font-family: 'Muli-italic';
+    src: url("../font/Muli/Muli-Italic.ttf");
+}
