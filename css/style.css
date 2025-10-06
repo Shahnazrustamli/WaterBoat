@@ -70,7 +70,8 @@ header {
 #about .about_us,
 .sec-4 .destination p,
 .form-head p,
-.sec-6 p {
+.sec-6 p span,
+.sec-7 p span{
   display: block;
   font: 300 1.1em "Dancing Script", sans-serif;
   text-transform: capitalize;
@@ -155,7 +156,8 @@ header {
 }
 .sec-4 .destination h3,
 .form-head h3,
-.sec-6 h3 {
+.sec-6 h3,
+.sec-7 h3 {
   font: 400 1.8em "Oswald", sans-serif;
 }
 .sec-4 .destination hr,
@@ -222,6 +224,13 @@ header {
   margin: 0 0 1em 0;
   color: #495057;
   border: 1px solid #ced4da;
+}
+.sec-5 .width {
+  display: inline-block;
+  width: 100%;
+}
+textarea{
+  width: 100%;
 }
 .sec-5 label,
 textarea {
