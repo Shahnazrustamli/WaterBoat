@@ -3,9 +3,6 @@
 :root {
   --blue: #1089ff;
 }
-body {
-  /* overflow-x: hidden */
-}
 header {
   background-color: #fff;
 }
@@ -71,7 +68,7 @@ header {
 .sec-4 .destination p,
 .form-head p,
 .sec-6 p span,
-.sec-7 p span{
+.sec-7 p span {
   display: block;
   font: 300 1.1em "Dancing Script", sans-serif;
   text-transform: capitalize;
@@ -229,7 +226,7 @@ header {
   display: inline-block;
   width: 100%;
 }
-textarea{
+textarea {
   width: 100%;
 }
 .sec-5 label,
@@ -280,39 +277,39 @@ form .button {
   font: 300 1.1em "Muli";
   margin-bottom: 10px;
 }
-.sec-7 .profile h3{
+.sec-7 .profile h3 {
   margin: 15px 0 4px 0;
   font: bold 1em "Muli";
   color: #000;
 }
-.sec-7 .profile p{
+.sec-7 .profile p {
   font: 400 15px "Muli";
-  font-family: 'Muli';
+  font-family: "Muli";
   color: #808080;
 }
-.sec-7 .profile{
+.sec-7 .profile {
   display: flex;
-  align-items: center ;
+  align-items: center;
 }
-.sec-7 .profile img{
+.sec-7 .profile img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
-.sec-7 .text{
+.sec-7 .text {
   text-align: left;
   padding: 30px;
   margin-bottom: 1em;
 }
-.sec-7 i{
+.sec-7 i {
   font-size: 1.5em;
   color: #1089ff;
   right: 15px;
   bottom: 30px;
 }
-.sec-7 .text p{
-  font: 300 1.1em 'Muli-italic';
+.sec-7 .text p {
+  font: 300 1.1em "Muli-italic";
   padding: 0 20px 0 0;
   color: gray !important;
   line-height: 1.7;
