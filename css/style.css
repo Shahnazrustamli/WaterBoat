@@ -3,6 +3,9 @@
 :root {
   --blue: #1089ff;
 }
+body{
+  overflow-x: hidden;
+}
 header {
   background-color: #fff;
 }
